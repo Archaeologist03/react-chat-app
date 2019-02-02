@@ -6,7 +6,7 @@ const messages = (state = [], action) => {
     case types.MESSAGE_RECEIVED:
       return state.concat([
         {
-          messages: action.message,
+          message: action.message,
           author: action.author,
           id: action.id,
         },
